@@ -14,6 +14,8 @@
 		7B34A4B71B9B73A5002AF631 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7B34A4B61B9B73A5002AF631 /* Images.xcassets */; };
 		7B34A4BA1B9B73A5002AF631 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7B34A4B81B9B73A5002AF631 /* LaunchScreen.xib */; };
 		7B34A4C61B9B73A6002AF631 /* DemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B34A4C51B9B73A6002AF631 /* DemoTests.m */; };
+		7BE5511B1B9CFD8900D1D85B /* JWTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BE5511A1B9CFD8900D1D85B /* JWTextField.m */; };
+		7BE5511C1B9CFD8900D1D85B /* JWTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BE5511A1B9CFD8900D1D85B /* JWTextField.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +42,8 @@
 		7B34A4BF1B9B73A6002AF631 /* DemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B34A4C41B9B73A6002AF631 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7B34A4C51B9B73A6002AF631 /* DemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DemoTests.m; sourceTree = "<group>"; };
+		7BE551191B9CFD8900D1D85B /* JWTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JWTextField.h; path = ../JWTextField.h; sourceTree = "<group>"; };
+		7BE5511A1B9CFD8900D1D85B /* JWTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JWTextField.m; path = ../JWTextField.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,10 +85,11 @@
 		7B34A4A81B9B73A5002AF631 /* Demo */ = {
 			isa = PBXGroup;
 			children = (
+				7BE5511D1B9CFD9300D1D85B /* Controller */,
+				7BE551191B9CFD8900D1D85B /* JWTextField.h */,
+				7BE5511A1B9CFD8900D1D85B /* JWTextField.m */,
 				7B34A4AD1B9B73A5002AF631 /* AppDelegate.h */,
 				7B34A4AE1B9B73A5002AF631 /* AppDelegate.m */,
-				7B34A4B01B9B73A5002AF631 /* ViewController.h */,
-				7B34A4B11B9B73A5002AF631 /* ViewController.m */,
 				7B34A4B31B9B73A5002AF631 /* Main.storyboard */,
 				7B34A4B61B9B73A5002AF631 /* Images.xcassets */,
 				7B34A4B81B9B73A5002AF631 /* LaunchScreen.xib */,
@@ -117,6 +122,15 @@
 				7B34A4C41B9B73A6002AF631 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7BE5511D1B9CFD9300D1D85B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				7B34A4B01B9B73A5002AF631 /* ViewController.h */,
+				7B34A4B11B9B73A5002AF631 /* ViewController.m */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -221,6 +235,7 @@
 			files = (
 				7B34A4B21B9B73A5002AF631 /* ViewController.m in Sources */,
 				7B34A4AF1B9B73A5002AF631 /* AppDelegate.m in Sources */,
+				7BE5511B1B9CFD8900D1D85B /* JWTextField.m in Sources */,
 				7B34A4AC1B9B73A5002AF631 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -229,6 +244,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7BE5511C1B9CFD8900D1D85B /* JWTextField.m in Sources */,
 				7B34A4C61B9B73A6002AF631 /* DemoTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -418,6 +434,7 @@
 				7B34A4CB1B9B73A6002AF631 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7B34A4CC1B9B73A6002AF631 /* Build configuration list for PBXNativeTarget "DemoTests" */ = {
 			isa = XCConfigurationList;
@@ -426,6 +443,7 @@
 				7B34A4CE1B9B73A6002AF631 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
