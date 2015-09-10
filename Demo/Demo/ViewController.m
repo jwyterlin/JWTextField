@@ -8,7 +8,11 @@
 
 #import "ViewController.h"
 
+#import "JWTextField.h"
+
 @interface ViewController ()
+
+@property(nonatomic,strong) JWTextField *textfield;
 
 @end
 
