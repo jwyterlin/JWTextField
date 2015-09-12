@@ -18,14 +18,30 @@
 
 @implementation ViewController
 
-- (void)viewDidLoad {
+#pragma mark - View Lifecycle
+
+-(void)viewDidLoad {
+    
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    [self.view addSubview:self.textfield];
+    
 }
 
-- (void)didReceiveMemoryWarning {
+-(void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+}
+
+#pragma mark - Creating components
+
+-(JWTextField *)textfield {
+    
+    if ( ! _textfield ) {
+        _textfield = [JWTextField new];
+    }
+    
+    return _textfield;
+    
 }
 
 @end

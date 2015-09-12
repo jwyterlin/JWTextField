@@ -27,7 +27,7 @@
     if ( self ) {
         
         CGFloat x = 8;
-        CGFloat y = 0;
+        CGFloat y = 40;
         CGFloat width = [UIScreen mainScreen].bounds.size.width - ( x * 2 );
         CGFloat height = 30;
         
@@ -81,6 +81,7 @@
     self.textColor = [UIColor colorWithRed:186.0/256.0 green:193.0/256.0 blue:179.0/256.0 alpha:1.0];
     self.keyboardType = UIKeyboardTypeDefault;
     self.delegate = self;
+    self.backgroundColor = [UIColor colorWithWhite:0.98 alpha:1.0];
     
     self.keyHeight = 224;
     
