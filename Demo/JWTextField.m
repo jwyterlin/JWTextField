@@ -82,6 +82,8 @@
     self.keyboardType = UIKeyboardTypeDefault;
     self.delegate = self;
     self.backgroundColor = [UIColor colorWithWhite:0.98 alpha:1.0];
+    self.layer.borderColor = [UIColor colorWithWhite:0.9 alpha:1.0].CGColor;
+    self.layer.borderWidth = 1.0;
     
     self.keyHeight = 224;
     
